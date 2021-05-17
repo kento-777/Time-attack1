@@ -54,7 +54,6 @@ header {
 .title {
   text-align: center;
   margin: 30px auto;
-  font-weight: bold;
 }
 
 .constructions {
@@ -83,10 +82,6 @@ header {
   max-width: 100%;
 }
 
-.content p {
-  font-size: 12px;
-}
-
 .content {
   margin-right: 10px;
 }
@@ -97,7 +92,6 @@ header {
 
 #contact h2 {
   margin: 20px 0;
-  font-weight: bold;
 }
 
 #contact P {
@@ -122,46 +116,12 @@ header {
 }
 
 footer {
-  border-top: solid 1px gray;
+  border-top: solid 1px rgb(110, 108, 108);
   text-align: right;
   font-size: 0.5rem;
 }
 
 footer p {
-  margin: 15px 0;
-}
-
-@media screen and (max-width: 480px) {
-  #head {
-    justify-content: none;
-    flex-flow: column;
-  }
-
-  .right-logo {
-    text-align: center;
-    margin: 0 auto;
-  }
-  
-  .left-logo {
-    text-align: center;
-    margin: 0 auto;
-  }
-
-  .constructions {
-    flex-flow: column;
-  }
-
-  .constructions p {
-    margin-top: 20px;
-  }
-
-  .list-contents {
-    flex-flow: column;
-  }
-
-  .content {
-    margin: 10px;
-  }
-
+  margin-bottom: 30px;
 }
 
