@@ -14,15 +14,26 @@ a {
   margin: 0 auto;
 }
 
+header {
+  margin: 0 auto;
+  max-width: 800px;
+  height: 60px;
+}
+
 #head {
   display: flex;
-  justify-content: space-between;
-  margin: 20px auto;
-  
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+#head h2 {
+  font-weight: bold;
 }
 
 .right-logo {
   display: flex;
+  margin-left: auto;
 }
 
 .right-logo li {
@@ -32,15 +43,18 @@ a {
 .right-logo a {
   color: black;
   font-weight: bold;
+  font-size: 14px;
 }
 
-#main img {
-  max-width: 100%;
+.main-visual  img {
+  width: 100%;
+  background-size: cover;
 }
 
 .title {
   text-align: center;
   margin: 30px auto;
+  font-weight: bold;
 }
 
 .constructions {
@@ -69,6 +83,10 @@ a {
   max-width: 100%;
 }
 
+.content p {
+  font-size: 12px;
+}
+
 .content {
   margin-right: 10px;
 }
@@ -79,6 +97,7 @@ a {
 
 #contact h2 {
   margin: 20px 0;
+  font-weight: bold;
 }
 
 #contact P {
@@ -103,13 +122,13 @@ a {
 }
 
 footer {
-  border-top: solid 1px rgb(110, 108, 108);
+  border-top: solid 1px gray;
   text-align: right;
   font-size: 0.5rem;
 }
 
 footer p {
-  margin-bottom: 30px;
+  margin: 15px 0;
 }
 
 @media screen and (max-width: 480px) {
