@@ -1,0 +1,114 @@
+input {
+  text-decoration: none; 
+}
+li {
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+#head {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px auto;
+  max-width: 50%;
+}
+
+.right-logo {
+  display: flex;
+}
+
+.right-logo li {
+  margin: 0 10px;
+}
+
+.right-logo a {
+  color: black;
+  font-weight: bold;
+}
+
+#main img {
+  max-width: 100%;
+}
+
+.title {
+  text-align: center;
+  margin: 30px auto;
+}
+
+.constructions {
+  display: flex;
+  margin: 0 50px;
+}
+
+.construction-img {
+  max-width: 800px;
+}
+
+.construction-img img {
+  max-width: 100%;
+}
+
+
+.constructions p {
+  margin: 0 10px;
+}
+
+.list-contents {
+  display: flex;
+}
+
+.content img {
+  max-width: 100%;
+}
+
+.content {
+  margin-right: 10px;
+}
+
+#contact {
+  text-align: center;
+}
+
+#contact h2 {
+  margin: 20px 0;
+}
+
+#contact P {
+  font-size: 0.5rem;
+}
+
+.do-btn {
+  margin: 10px 0 30px 0;
+}
+
+.do-btn button {
+  background-color: rgb(247, 85, 85);
+  color: white;
+  padding: 5px 30px;
+  border-radius: 2px;
+}
+
+#contact input {
+  border: solid 1px gray;
+  border-radius: 25px;
+  outline: none;
+}
+
+footer {
+  border-top: solid 1px rgb(110, 108, 108);
+  text-align: right;
+  font-size: 0.5rem;
+}
+
+footer p {
+  margin-bottom: 30px;
+}
+
