@@ -14,15 +14,26 @@ a {
   margin: 0 auto;
 }
 
+header {
+  margin: 0 auto;
+  max-width: 800px;
+  height: 60px;
+}
+
 #head {
   display: flex;
-  justify-content: space-between;
-  margin: 20px auto;
-  max-width: 50%;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+#head h2 {
+  font-weight: bold;
 }
 
 .right-logo {
   display: flex;
+  margin-left: auto;
 }
 
 .right-logo li {
@@ -32,10 +43,12 @@ a {
 .right-logo a {
   color: black;
   font-weight: bold;
+  font-size: 14px;
 }
 
-#main img {
-  max-width: 100%;
+.main-visual  img {
+  width: 100%;
+  background-size: cover;
 }
 
 .title {
