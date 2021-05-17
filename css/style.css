@@ -1,8 +1,6 @@
-input {
-  text-decoration: none; 
-}
-li {
-  text-decoration: none;
+
+ul {
+  list-style: none;
 }
 
 a {
@@ -59,11 +57,16 @@ header {
 
 .constructions {
   display: flex;
-  margin: 0 50px;
+}
+
+.constructions p {
+  margin: 0;
+  font-size: 12px;
+  width: 50%;
 }
 
 .construction-img {
-  max-width: 800px;
+  width: 50%;
 }
 
 .construction-img img {
@@ -88,7 +91,7 @@ header {
 }
 
 .content {
-  margin-right: 10px;
+  margin: 0 20px;
 }
 
 #contact {
@@ -105,13 +108,13 @@ header {
 }
 
 .do-btn {
-  margin: 10px 0 30px 0;
+  margin: 20px 0 50px 0;
 }
 
 .do-btn button {
   background-color: rgb(247, 85, 85);
   color: white;
-  padding: 5px 30px;
+  padding: 20px 100px;
   border-radius: 2px;
 }
 
@@ -119,6 +122,7 @@ header {
   border: solid 1px gray;
   border-radius: 25px;
   outline: none;
+  padding: 5px;
 }
 
 footer {
