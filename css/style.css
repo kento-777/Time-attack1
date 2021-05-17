@@ -18,7 +18,7 @@ a {
   display: flex;
   justify-content: space-between;
   margin: 20px auto;
-  max-width: 50%;
+  
 }
 
 .right-logo {
@@ -110,5 +110,39 @@ footer {
 
 footer p {
   margin-bottom: 30px;
+}
+
+@media screen and (max-width: 480px) {
+  #head {
+    justify-content: none;
+    flex-flow: column;
+  }
+
+  .right-logo {
+    text-align: center;
+    margin: 0 auto;
+  }
+  
+  .left-logo {
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .constructions {
+    flex-flow: column;
+  }
+
+  .constructions p {
+    margin-top: 20px;
+  }
+
+  .list-contents {
+    flex-flow: column;
+  }
+
+  .content {
+    margin: 10px;
+  }
+
 }
 
