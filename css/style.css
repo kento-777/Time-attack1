@@ -1,4 +1,3 @@
-
 ul {
   list-style: none;
 }
@@ -45,8 +44,13 @@ header {
   font-size: 14px;
 }
 
+.main-visual {
+  overflow: hidden;
+}
+
 .main-visual  img {
   width: 100%;
+  max-width: 100%;
   background-size: cover;
 }
 
@@ -146,18 +150,31 @@ footer p {
 
 @media screen and (max-width: 480px) {
   #head {
-    justify-content: none;
     flex-flow: column;
+  }
+
+  header {
+    height: 80px;
   }
 
   .right-logo {
     text-align: center;
     margin: 0 auto;
+    margin-top: 20px;
   }
   
   .left-logo {
     text-align: center;
     margin: 0 auto;
+  }
+
+  .main-visual {
+    height: 200px;
+  }
+
+  .main-visual img {
+    height: 100%;
+    object-fit: cover;
   }
 
   .constructions {
@@ -186,6 +203,10 @@ footer p {
 
   .do-btn button {
     width: 90%;
+  }
+
+  footer p {
+    text-align: center;
   }
 
 }
