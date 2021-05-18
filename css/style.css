@@ -10,6 +10,7 @@ a {
 .wrapper {
   max-width: 800px;
   margin: 0 auto;
+  margin-bottom: 100px;
 }
 
 header {
@@ -52,6 +53,7 @@ header {
 .title {
   text-align: center;
   margin: 30px auto;
+  font-size: 20px;
   font-weight: bold;
 }
 
@@ -60,8 +62,9 @@ header {
 }
 
 .constructions p {
-  margin: 0;
-  font-size: 12px;
+  margin-left: 30px;
+  font-size: 14px;
+  line-height: 1.2;
   width: 50%;
 }
 
@@ -71,11 +74,6 @@ header {
 
 .construction-img img {
   max-width: 100%;
-}
-
-
-.constructions p {
-  margin: 0 10px;
 }
 
 .list-contents {
@@ -88,7 +86,8 @@ header {
 
 .content p {
   font-size: 12px;
-  font-weight: bold;
+  margin-top: 5px;
+  font-weight: bolder;
 }
 
 .content {
@@ -105,7 +104,9 @@ header {
 }
 
 #contact P {
-  font-size: 0.5rem;
+  font-size: 12px;
+  margin-top: 40px;
+  margin-bottom: 5px;
 }
 
 .do-btn {
@@ -114,16 +115,19 @@ header {
 
 .do-btn button {
   background-color: rgb(247, 85, 85);
+  opacity: 0.9;
   color: white;
   padding: 20px 100px;
   border-radius: 2px;
+  font-weight: bold;
 }
 
 #contact input {
-  border: solid 1px gray;
+  border: solid 2px rgb(216, 211, 211);
   border-radius: 25px;
   outline: none;
-  padding: 5px;
+  width: 50%;
+  padding: 10px;
 }
 
 footer {
@@ -154,10 +158,19 @@ footer p {
 
   .constructions {
     flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+  }
+
+  .construction-img img {
+    width: 90%;
   }
 
   .constructions p {
     margin-top: 20px;
+    margin-left: 0;
+    width: 90%;
   }
 
   .list-contents {
@@ -166,6 +179,18 @@ footer p {
 
   .content {
     margin: 10px;
+  }
+
+  #contact p {
+    margin-bottom: 20px;
+  }
+
+  #contact input {
+    width: 90%;
+  }
+
+  .do-btn button {
+    width: 90%;
   }
 
 }
