@@ -24,6 +24,7 @@ header {
   align-items: center;
   justify-content: center;
   padding-top: 20px;
+  margin-bottom: 0;
 }
 
 #head h2 {
@@ -140,19 +141,23 @@ footer p {
 }
 
 @media screen and (max-width: 480px) {
+  header {
+    height: 90px;
+  }
+
   #head {
-    justify-content: none;
     flex-flow: column;
+    margin: 10px 0 10px 0;
   }
 
   .right-logo {
     text-align: center;
-    margin: 0 auto;
+    margin: 10px auto 5px auto;
   }
   
   .left-logo {
     text-align: center;
-    margin: 0 auto;
+    margin-bottom: 10px;
   }
 
   .constructions {
