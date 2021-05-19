@@ -1,0 +1,67 @@
+@import "colors";
+@import "values";
+
+a {
+  text-decoration: none;
+}
+
+
+.header {
+  
+  &__wrapper {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin: $wrapper-margin;
+    
+    .left-logo {
+
+      &__h2 {
+        
+      }
+    }
+
+    .right-logo {
+      
+      .logo-list {
+        display: flex; 
+
+        item {
+          margin: $item-margin;
+
+          &__a {
+            color: black;
+          
+          }
+        }
+      }
+    }
+  }
+}
+
+.main-vsual {
+  
+  &__img{
+  width: 100%;
+
+  }
+}
+
+.what {
+
+  &__title {
+  text-align: center;    
+    
+  }
+  .constructions {
+
+    &__img {
+  
+    }
+    &__p {
+
+    }
+
+  }
+}
+
