@@ -3,6 +3,9 @@ a {
 }
 
 .header__wrapper {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -10,9 +13,6 @@ a {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin: 20px 50px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .header__wrapper .right-logo .logo-list {
@@ -21,12 +21,139 @@ a {
   display: flex;
 }
 
-margin
+.header__wrapper .right-logo .logo-list item {
+  margin: 21px;
+}
+
 .header__wrapper .right-logo .logo-list item__a {
   color: black;
+  font-weight: bolder;
+  font-size: 14px;
 }
 
 .main-vsual__img {
   width: 100%;
+  background-size: cover;
+}
+
+.about__title {
+  text-align: center;
+  margin: 30px auto;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.about .constructions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.about .constructions__img {
+  width: 50%;
+}
+
+.about .constructions__img img {
+  max-width: 100%;
+}
+
+.about .constructions__p {
+  margin-left: 30px;
+  font-size: 14px;
+  line-height: 1.2;
+  width: 50%;
+}
+
+.contents__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contents__list .item-first {
+  margin: 0 20px;
+}
+
+.contents__list .item-first p {
+  font-size: 12px;
+  margin-top: 5px;
+  font-weight: bolder;
+}
+
+.contents__list .item-first img {
+  max-width: 100%;
+}
+
+.contents__list .item-second {
+  margin: 0 20px;
+}
+
+.contents__list .item-second p {
+  font-size: 12px;
+  margin-top: 5px;
+  font-weight: bolder;
+}
+
+.contents__list .item-second img {
+  max-width: 100%;
+}
+
+.contents__list .item-third {
+  margin: 0 20px;
+}
+
+.contents__list .item-third p {
+  font-size: 12px;
+  margin-top: 5px;
+  font-weight: bolder;
+}
+
+.contents__list .item-third img {
+  max-width: 100%;
+}
+
+.contact {
+  text-align: center;
+}
+
+.contact__h2 {
+  margin: 20px 0;
+}
+
+.contact__p {
+  font-size: 12px;
+  margin-top: 40px;
+  margin-bottom: 5px;
+}
+
+.contact form input {
+  border: solid 2px #d8d3d3;
+  border-radius: 25px;
+  outline: none;
+  width: 50%;
+  padding: 10px;
+}
+
+.contact form .submit {
+  margin: 20px 0 50px 0;
+}
+
+.contact form .submit__btn {
+  background-color: #f75555;
+  opacity: 0.9;
+  color: white;
+  padding: 20px 100px;
+  border-radius: 2px;
+  font-weight: bold;
+}
+
+footer {
+  border-top: solid 1px #6e6c6c;
+  text-align: right;
+  font-size: 0.5rem;
+}
+
+footer p {
+  margin: 15px 0;
 }
 /*# sourceMappingURL=style.css.map */

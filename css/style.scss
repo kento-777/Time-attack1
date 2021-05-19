@@ -1,11 +1,24 @@
 @import "colors";
 @import "values";
 
+@mixin content{
+  margin: 0 20px;
+    p {
+      font-size: 12px;
+      margin-top: 5px;
+      font-weight: bolder;
+    }
+    img {
+      max-width: 100%;
+    }
+}
+
+
 a {
   text-decoration: none;
 }
 
-
+//header
 .header {
   
   &__wrapper {
@@ -13,7 +26,6 @@ a {
     display: flex;
     justify-content: space-between;
     margin: $wrapper-margin;
-    
     .left-logo {
 
       &__h2 {
@@ -25,12 +37,13 @@ a {
       
       .logo-list {
         display: flex; 
-
         item {
           margin: $item-margin;
 
           &__a {
             color: black;
+            font-weight: bolder;
+            font-size: 14px;
           
           }
         }
@@ -39,29 +52,105 @@ a {
   }
 }
 
+//main デイトラとは
 .main-vsual {
   
   &__img{
   width: 100%;
+  background-size: cover;
 
   }
 }
 
-.what {
-
+.about {
   &__title {
-  text-align: center;    
-    
+  text-align: center;  
+  margin: 30px auto;
+  font-size: 20px;
+  font-weight: bold;  
   }
   .constructions {
+    display: flex;
 
     &__img {
-  
+      width: 50%;
+      img {
+        max-width: 100%;
+      }
     }
     &__p {
-
+      margin-left: 30px;
+      font-size: 14px;
+      line-height: 1.2;
+      width: 50%;
     }
-
   }
 }
+
+//main コース一覧
+.contents {
+  
+  &__title {
+
+  }
+
+  &__list {
+    display: flex;
+    .item {
+      &-first {
+        @include content;
+      }
+      &-second {
+        @include content;
+      }
+      &-third {
+        @include content;
+      }
+    }
+  }
+}
+
+//main お問い合わせ
+.contact {
+  text-align: center;
+  &__h2 {
+    margin: 20px 0;
+  }
+  &__p {
+    font-size: 12px;
+    margin-top: 40px;
+    margin-bottom: 5px;
+  }
+  form {
+    input {
+      border: solid 2px rgb(216, 211, 211);
+      border-radius: 25px;
+      outline: none;
+      width: 50%;
+      padding: 10px;
+    }
+    .submit {
+      margin: 20px 0 50px 0;
+      &__btn {
+        background-color: rgb(247, 85, 85);
+        opacity: 0.9;
+        color: white;
+        padding: 20px 100px;
+        border-radius: 2px;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+//footer
+footer {
+  border-top: solid 1px rgb(110, 108, 108);
+  text-align: right;
+  font-size: 0.5rem;  
+  p {
+    margin: 15px 0;
+  }
+}
+
 
