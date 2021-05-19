@@ -1,0 +1,251 @@
+@import "colors";
+@import "values";
+
+@mixin content{
+  margin: 0 20px;
+
+    p {
+      font-size: 12px;
+      margin-top: 5px;
+      font-weight: bolder;
+    }
+
+    img {
+      max-width: 100%;
+    }
+}
+
+@mixin wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+  margin-bottom: 100px;
+}  
+  
+a {
+  text-decoration: none;
+}
+
+//header
+.header {
+  height: 60px;
+  margin: 0 auto;
+  max-width: 800px;
+
+  &__wrapper {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+
+    .left-logo {
+      &__h2 {
+        font-weight: bold; 
+      }
+    }
+
+    .right-logo {
+      .logo-list {
+        display: flex; 
+
+        .item {
+          margin: $item-margin;
+
+          &__a {
+            color: black;
+            font-weight: bolder;
+            font-size: 14px;
+          
+          }
+        }
+      }
+    }
+  }
+}
+
+//main デイトラとは
+.main-vsual {
+  &__img{
+  width: 100%;
+  background-size: cover;
+  }
+}
+
+.about {
+  @include wrapper;
+
+  &__title {
+  text-align: center;  
+  margin: 30px auto;
+  font-size: 20px;
+  font-weight: bold;  
+  }
+
+  .constructions {
+    display: flex;
+
+    &__img {
+      width: 50%;
+      img {
+        max-width: 100%;
+      }
+    }
+
+    &__p {
+      margin-left: 30px;
+      font-size: 14px;
+      line-height: 1.2;
+      width: 50%;
+    }
+  }
+}
+
+//main コース一覧
+.contents {
+  @include wrapper;
+
+  &__title {
+    text-align: center;
+    margin: 30px auto;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  &__list {
+    display: flex;
+    .item {
+      &-first {
+        @include content;
+      }
+      &-second {
+        @include content;
+      }
+      &-third {
+        @include content;
+      }
+    }
+  }
+}
+
+//main お問い合わせ
+.contact {
+  @include wrapper;
+  text-align: center;
+
+  &__h2 {
+    font-weight: bold;
+    margin: 20px 0;
+  }
+
+  &__p {
+    font-size: 12px;
+    margin-top: 40px;
+    margin-bottom: 5px;
+  }
+
+  form {
+    input {
+      border: solid 2px rgb(216, 211, 211);
+      border-radius: 25px;
+      outline: none;
+      width: 50%;
+      padding: 10px;
+    }
+    .submit {
+      margin: 20px 0 50px 0;
+      &__btn {
+        background-color: rgb(247, 85, 85);
+        opacity: 0.9;
+        color: white;
+        padding: 20px 100px;
+        border-radius: 2px;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+//footer
+footer {
+  border-top: solid 1px rgb(110, 108, 108);
+  text-align: right;
+  font-size: 0.5rem; 
+
+  p {
+    margin: 15px 0;
+  }
+}
+
+//レスポンシブ対応
+@media screen and (max-width: 480px) {
+  .header {
+    height: 90px;
+
+    &__wrapper {
+      flex-flow: column;
+      margin: 10px 0 10px 0;
+      
+      .left-logo {
+        text-align: center;
+        margin-bottom: 10px;
+      }
+
+      .right-logo {
+        text-align: center;
+        margin: 10px auto 5px auto;
+      }
+    }
+  }
+  .about {
+    .constructions {
+      flex-flow: column;
+      justify-content: center;
+      align-items: center;
+      max-width: 100%;
+  
+      &__p {
+        margin-top: 20px;
+        margin-left: 0;
+        width: 90%;
+      }
+  
+      &__img {
+        width: 90%;  
+      }
+    }
+  }
+  
+
+  .contents {
+    &__list {
+      flex-flow: column;
+
+      .item {
+        &-first, &-second, &-third {
+        margin: 10px;  
+        }  
+      }
+    }
+  }
+
+  .contact {
+    &__p {
+      margin-bottom: 20px;    
+    }
+
+    form {
+      input {
+        width: 90%;  
+      }
+    } 
+  }
+
+  .submit__btn {
+    width: 90%;
+  }
+
+  footer {
+    p {
+      text-align: center;
+    }
+  }
+}

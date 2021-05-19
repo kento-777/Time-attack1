@@ -9,61 +9,65 @@
   <title>Timeattack</title>
 </head>
 <body>
-  <header>
-    <div id="head" class="wrapper">
+  <header class="header">
+    <div class="header__wrapper">
       <div class="left-logo">
-        <h2>30DAYSトライアル</h2>
+        <h2 class="left-logo__h2">30DAYSトライアル</h2>
       </div>
-      <ul class="right-logo">
-        <li><a href="#">デイトラとは</a></li>
-        <li><a href="#">コース一覧</a></li>
-        <li><a href="#">お問い合わせ</a></li>
-      </ul>
+      <div class="right-logo">
+        <ul class="logo-list">
+          <li class="item"><a class="item__a" href="#">デイトラとは</a></li>
+          <li class="item"><a class="item__a" href="#">コース一覧</a></li>
+          <li class="item"><a class="item__a" href="#">お問い合わせ</a></li>
+        </ul>
+      </div>
     </div>
   </header>
   <main>
-    <div id="main" class="main-visual">
-      <img src="./img/main-vsual.png">
+    <div class="main-vsual">
+      <img class="main-vsual__img" src="./img/main-vsual.png">
     </div>
-    <section id="description" class="wrapper">
-      <div class="title">デイトラとは</div>
+    <section class="about">
+      <h2 class="about__title">デイトラとは</h2>
       <div class="constructions">
-        <div class="construction-img">
+        <div class="constructions__img">
           <img src="./img/about.png">
         </div>
-        <p>デイトラとは、無料で・迷わず・楽しく学べるプログラミング学習アプリです。毎日設定された課題をこなしていくだけで、未経験から30日でプログラミングスキルが身につきます。<br>
-           一日１題30日でプロのWebエンジニアを目指しましょう！</p>
+        <p class="constructions__p">
+          デイトラとは、無料で・迷わず・楽しく学べるプログラミング学習アプリです。毎日設定された課題をこなしていくだけで、未経験から30日でプログラミングスキルが身につきます。<br>
+          一日１題30日でプロのWebエンジニアを目指しましょう！
+        </p>
       </div> 
     </section>
-    <section id="list" class="wrapper">
-      <div class="title">コース一覧</div>
-      <ul class="list-contents">
-        <li class="first content">
+    <section class="contents">
+      <div class="contents__title">コース一覧</div>
+      <ul class="contents__list">
+        <li class="item-first">
           <img src="./img/web_first.png">
           <p>HTML / CSS / Bootstrap</p>
         </li>
-        <li class="second content">
+        <li class="item-second">
           <img src="./img/web_second.png">
           <p>HTML / CSS / JavaScript / jQuery</p>
         </li>
-        <li class="third content">
+        <li class="item-third">
           <img src="./img/web_third.png">
           <p>PHP / WordPress</p>
         </li>
       </ul>
     </section>
-    <section id="contact" class="wrapper">
-      <h2 class="title">お問い合わせ</h2>
-      <p>さあ今日から30日間を始めよう！</p>
+    <section class="contact">
+      <h2 class="contact__h2">お問い合わせ</h2>
+      <p class="contact__p">さあ今日から30日間を始めよう！</p>
       <form action="#" method="post">
         <input type="email" name="email" size="60" placeholder="メールアドレス">
-        <div class="do-btn">
-          <button type="submit">無料ではじめる</button>
+        <div class="submit">
+          <button class="submit__btn" type="submit">無料ではじめる</button>
         </div>
       </form>
     </section>
   </main>
-  <footer class="wrapper">
+  <footer>
     <p>Copyright(C) 2020 東京フリーランス ALL Rights Reserved.</p>
   </footer>
 </body>
