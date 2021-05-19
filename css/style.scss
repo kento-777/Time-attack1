@@ -13,23 +13,31 @@
     }
 }
 
-
+@mixin wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+  margin-bottom: 100px;
+}  
+  
 a {
   text-decoration: none;
 }
 
 //header
 .header {
-  
+  height: 60px;
+  margin: 0 auto;
+  max-width: 800px;
+
   &__wrapper {
     align-items: center;
     display: flex;
     justify-content: space-between;
-    margin: $wrapper-margin;
+    padding-top: 20px;
     .left-logo {
 
       &__h2 {
-        
+        font-weight: bold; 
       }
     }
 
@@ -37,7 +45,7 @@ a {
       
       .logo-list {
         display: flex; 
-        item {
+        .item {
           margin: $item-margin;
 
           &__a {
@@ -63,6 +71,8 @@ a {
 }
 
 .about {
+  @include wrapper;
+
   &__title {
   text-align: center;  
   margin: 30px auto;
@@ -89,9 +99,12 @@ a {
 
 //main コース一覧
 .contents {
-  
+  @include wrapper;
   &__title {
-
+    text-align: center;
+    margin: 30px auto;
+    font-size: 20px;
+    font-weight: bold;
   }
 
   &__list {
@@ -112,8 +125,11 @@ a {
 
 //main お問い合わせ
 .contact {
+  @include wrapper;
   text-align: center;
+
   &__h2 {
+    font-weight: bold;
     margin: 20px 0;
   }
   &__p {
@@ -153,4 +169,8 @@ footer {
   }
 }
 
+//レスポンシブ対応
+@media screen and (max-width:$smart-phone) {
+
+}
 
